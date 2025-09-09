@@ -66,11 +66,10 @@ graph TB
     F --> G[TB6600 Stepper Drivers]
     G --> H[NEMA17 Motors]
     H --> I[Turret Mechanism]
-    I --> J[Nerf Gun Assembly]
 
-    F --> K[Limit Switches]
-    F --> L[Servo Controllers]
-    L --> M[Gun Trigger Mechanism]
+    K[Limit Switches] --> F
+    F --> L[Gun Enable Servo]
+    F --> M[Gun Shoot Servo]
 ```
 
 ## Hardware Components
